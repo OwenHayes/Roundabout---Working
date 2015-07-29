@@ -35,3 +35,14 @@
 	background: transparent;
 	border: dotted;
 }
+
+a {
+
+	color: white;
+}
+
+a:hover {
+
+	color:#777;
+}
+

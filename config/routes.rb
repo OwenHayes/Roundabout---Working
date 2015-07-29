@@ -4,8 +4,14 @@ Rails.application.routes.draw do
   resources :societies
   resources :profile
   resources :home
+<<<<<<< HEAD
   resources :coding
   resources :lyfestyle
+=======
+  resources :challenges
+  
+
+>>>>>>> origin/master
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

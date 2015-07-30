@@ -2,16 +2,15 @@
 <link href="public/profile.css" rel="stylesheet" type="text/css"></link>
     <!-- Header -->
     <script type="text/javascript">
-        
     </script>
     <a name="xabout"></a>
     <div class="xintro-header">
         <div class="xcontainer">
             <div class="xrow">
                 <div class="xcol-lg-12">
-                <%= image_tag("/bg/pp/1.jpg", :id => "profilepic") %>
+                <%= image_tag("/bg/pp/3.jpg", :id => "profilepic") %>
                     <div class="xintro-message">
-                        <h1>User Name <%= @username %>!</h1>
+                        <h1><%= current_user.username %></h1>
                         <h3>Bio:</h3>
                         <p id="bio"> Hello World!! </p>
                         <hr class="xintro-divider">

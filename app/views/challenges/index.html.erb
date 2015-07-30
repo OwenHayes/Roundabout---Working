@@ -1,5 +1,46 @@
-<h1>challenges page </h1>
-<div class="alert alert-info">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>3 new quests available</strong> please go to you challenge page for more information!
-</div>
+    <body onload="hexgen()">
+
+
+      <div class="jumbotron" id="jcoding" style="background-image: url('http://www.pulsarwallpapers.com/data/media/3/Alien%20Ink%202560X1600%20Abstract%20Background.jpg')">
+        <div id="challenge-home">
+            <hr class="intro-divider" >
+            <h1>Challenges</h1>
+            <hr class="intro-divider" >
+        </div>
+    </div>
+    <div>
+    <div>
+      <div class="challenge"id="challenge1">
+    
+      </div>
+    </div>
+  </div>
+  <div>
+      <div class="challenge"id="challenge2">
+        Challenge
+      </div>
+    </div>
+  </div>
+  <div>
+      <p class="challenge"id="challenge3">
+        Challenge
+      </p>
+    </div>
+  </div>
+
+    <script type="text/javascript">
+     hexgen()
+     i=1
+        while (i<4) {
+       var Letter =new Array ("0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F");
+       var hexnumber = "#"+""+Letter[Math.floor((Math.random() * 16) + 0)]+""+Letter[Math.floor((Math.random() * 16) + 0)]+""+Letter[Math.floor((Math.random() * 16) + 0)]+""+Letter[Math.floor((Math.random() * 16) + 0)]+""+Letter[Math.floor((Math.random() * 16) + 0)]+""+Letter[Math.floor((Math.random() * 16) + 0)] ;
+       var challenge = "challenge"+i;
+         document.getElementById(challenge).style.background=hexnumber;
+         i++;
+
+
+     }
+   
+  
+    </script>
+    </body>

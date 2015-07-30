@@ -46,3 +46,40 @@ a:hover {
 	color:#777;
 }
 
+body {
+ 	background-image:url('http://top1walls.com/walls/nature/trees-backgrounds-wood-texture--1549497-1024x696.jpg');
+ }
+.jumbotron {
+ 	text-align:center;
+	color:white;
+		margin:3% 6%;
+	 border-radius: 8px;
+	     text-shadow: 4px 4px 6px rgba(0,0,0,0.6);
+
+	 box-shadow: 10px 10px 5px rgba(0,0,0,0.6);
+	}
+.tab-content {
+	background-color:white;
+
+}
+.nav-tabs{
+	background-color: transparent;
+}
+.menu{
+	margin-left: 6%;
+		margin-right: 6%;
+}
+#guru {
+	verticl-align: middle;
+}
+
+#challengetxt{
+	color:white;
+}
+.challenge{
+	padding-top:8%;
+	padding-bottom:8%;
+	margin:4% 0%;
+
+}
+

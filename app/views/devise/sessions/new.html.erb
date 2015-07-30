@@ -9,6 +9,7 @@
             <hr class="intro-divider">
             <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <center>
+
   <div class="field">
    <p><%= f.label :login %><br />
    <%= f.text_field :login, autofocus:true , id:"textbox"%></p>
@@ -32,6 +33,8 @@
 <%= render "devise/shared/links" %>
 </center>
             <hr class="intro-divider">
+                  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
                     </div>
                 </div>
             </div>

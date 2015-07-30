@@ -10,7 +10,7 @@
                         <hr class="intro-divider">
 						<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>
-
+      <p class="notice"><%= notice %></p>
   <div class="field">
     
    <%= f.label :email %><br />
@@ -26,6 +26,8 @@
 
                         </ul>
 						<hr class="intro-divider">
+                  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
                     </div>
                 </div>
             </div>

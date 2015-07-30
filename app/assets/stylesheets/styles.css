@@ -59,8 +59,11 @@ body {
 	 box-shadow: 10px 10px 5px rgba(0,0,0,0.6);
 	}
 .tab-content {
-	background-color:white;
+	background-color:transparent;
 
+}
+.tab-pane{
+	background-color: transparent;
 }
 .nav-tabs{
 	background-color: transparent;
@@ -87,15 +90,27 @@ body {
 	margin:10% 0%;
 }
 .homies{
-	padding-top:8%;
-	padding-bottom:8%;
-	margin:4% 0%;
-
+	background-color: transparent;
+	border: dotted;
+	color:white;
+	padding:2% 2%; 
+	margin:5% 5%;
 }
+
+
 .pp_n {
 	padding:4px 4px;
+	margin-right:4%;
         width:20%;
         height:20%;
         border-radius: 80%;
         background-color:white;
+}
+#usercomment{
+display:block;
+	margin:4% 0%;
+}
+#username{
+display:block;
+	margin:4% 0%;
 }

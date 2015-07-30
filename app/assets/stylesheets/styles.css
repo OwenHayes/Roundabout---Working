@@ -82,4 +82,20 @@ body {
 	margin:4% 0%;
 
 }
+.container-homies{
+	background-color: transparent;
+	margin:10% 0%;
+}
+.homies{
+	padding-top:8%;
+	padding-bottom:8%;
+	margin:4% 0%;
 
+}
+.pp_n {
+	padding:4px 4px;
+        width:20%;
+        height:20%;
+        border-radius: 80%;
+        background-color:white;
+}

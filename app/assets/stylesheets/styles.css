@@ -100,7 +100,7 @@ body {
 
 .pp_n {
 	padding:4px 4px;
-	margin-right:4%;
+	margin:4%;
         width:20%;
         height:20%;
         border-radius: 80%;
@@ -113,7 +113,4 @@ display:block;
 #username{
 display:block;
 	margin:4% 0%;
-}
-#btnzz:onclick{
-	color:red;
 }

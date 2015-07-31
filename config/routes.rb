@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :profile
   resources :home
   resources :coding
-  resources :lyfestyle
+  resources :wood
   resources :challenges
   
 

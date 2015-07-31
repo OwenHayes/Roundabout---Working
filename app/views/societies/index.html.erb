@@ -1,4 +1,4 @@
-
+<% if user_signed_in? %>
 <body>
 	<div class="intro-header"style="background: url('/bg/intro-bg.jpg') no-repeat center center;">
 		<div class="intro-message">
@@ -11,8 +11,90 @@
 						<span class="network-name">Coding</span></a>
 				</li>
 				<li>
-					<a href="https://github.com/graceannx/Roundabout" class="btn btn-default btn-lg"><span class="network-name">Life Style</span></a>
+					<a href="wood#index" class="btn btn-default btn-lg"><span class="network-name">Wood Working</span></a>
 				</li>
 			</ul>
 		</div>
 	</div>
+<% elsif expertuser_signed_in? %>
+<body>
+	<div class="intro-header"style="background: url('/bg/intro-bg.jpg') no-repeat center center;">
+		<div class="intro-message">
+			<h1>Societies</h1>
+			<h3>Connect and Explore</h3>
+			<hr class="intro-divider">
+			  <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="coding#index" class="btn btn-default btn-lg"><span class="network-name">Coding</span></a>
+                            </li>
+                             
+                            <li>
+                                <a class="btn btn-default btn-lg"><span class="network-name">Cooking</span></a>
+                            </li>
+                            <li>
+                                <a href="wood#index" class="btn btn-default btn-lg" ><span class="network-name">Wood Working</span></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-default btn-lg"><span class="network-name">Architecture</span></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-default btn-lg"><span class="network-name">Textiles</span></a>
+                            </li>
+
+                        
+                        </ul>
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a class="btn btn-default btn-lg"><span class="network-name">Gardening</span></a>
+                            </li>
+                             
+                            <li>
+                                <a class="btn btn-default btn-lg"><span class="network-name">Gaming</span></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-default btn-lg"><span class="network-name">Books</span></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-default btn-lg"><span class="network-name">Life Style</span></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-default btn-lg"><span class="network-name">Poetry</span></a>
+                            </li>
+                            
+                        
+                        </ul>
+
+		</div>
+	</div>
+<%else%> 
+<a name="about"></a>
+    <div class="intro-header"style="background: url('/bg/intro-bg.jpg') no-repeat center center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Please Login</h1>
+                        <h3>You Must be Logged in to View this Page</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                           <li>
+                                <a href="/users/sign_in" class="btn btn-default btn-lg"><span class="network-name">Login</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/expertusers/sign_in" class="btn btn-default btn-lg"><span class="network-name">Expert Login</span></a>
+                            </li>
+                         
+                        </ul>
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="/users/sign_up" class="btn btn-default btn-lg"><span class="network-name">Create an Account</span></a>
+                            </li>
+                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% end %>

@@ -1,4 +1,4 @@
-<% if user_signed_in? or expertuser_signed_in? %>
+<% if user_signed_in?%>
 <a name="about"></a>
     <div class="intro-header"style="background: url('/bg/intro-bg.jpg') no-repeat center center;">
         <div class="container">
@@ -65,6 +65,31 @@
         </div>
   </div>
 </script>
+<%elsif expertuser_signed_in?%> 
+<a name="about"></a>
+    <div class="intro-header"style="background: url('/bg/intro-bg.jpg') no-repeat center center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Welcome</h1>
+                        <h3>Moderator Dashboard</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                           <li>
+                                <a class="btn btn-default btn-lg"><span class="network-name">Submitted Challenges</span></a>
+                            </li>
+
+                            <li>
+                                <a class="btn btn-default btn-lg"><span class="network-name">Guru Questions</span></a>
+                            </li>
+                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <%else%> 
 <a name="about"></a>
     <div class="intro-header"style="background: url('/bg/intro-bg.jpg') no-repeat center center;">

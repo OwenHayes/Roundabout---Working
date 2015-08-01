@@ -1,0 +1,2 @@
+class EngineeringController < ApplicationController
+end

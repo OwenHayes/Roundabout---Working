@@ -1,8 +1,37 @@
-<% if expertuser_signed_in?%>
+<%# if expertuser_signed_in?%>
+<div class="homies">
+	<div id="modbody">
+	<h2>Please Select a skill the challenge belongs to </h2>
+	<select id="ski"class="skills"></select>
+	<h2>Please Select the society this challenge belongs to </h2>
+	<select id="inti">
+		<option value="coding">Coding</option>
+		<option value="cooking">Cooking</option>
+		<option value="wood">Wood Working</option>
+		<option value="architecture">Arcitecture</option>
+		<option value="text">Textiles</option>
+		<option value="gardening">Gardening</option>
+		<option value="gaming">Gaming</option>
+		<option value="lit">Literature</option>
+		<option value="Life">poetry</option>
+	</select>
+	<h2>Please enter a description of the challenge</h2>
+	<input id="chl"style="height:40%;width:40%;"></input>
+</div>
+<ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a onclick="cont()" style="margin:2px 0px;"class="btn btn-default btn-lg"><span class="network-name">Submit Challenge</span></a>
+                            </li>
+                         
 
 
+<script>
+function cont(){
+	document.getElementById('modbody').innerHTML="Challenge Submitted Successfully" 
+}
+</script>
 
 
+<%# else %>
 
-
-<% else %>
+<%#end %>

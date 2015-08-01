@@ -47,3 +47,33 @@ $(document).ready(function() {
 		}
 	});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function cont(){
+	document.getElementById('modbody').innerHTML="Challenge Submitted Successfully" 
+}

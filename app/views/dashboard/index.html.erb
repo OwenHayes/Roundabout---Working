@@ -5,11 +5,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Thankyou For Registering</h1>
-                        <h3>Please choose some interests and then select either'Become a Master' is you would like to focus on challenges related to your chosen interests or 'Expand Your Skills' if you would like to explore new options</h3>
+                        <h1>Thank you For Registering</h1>
+                        <h3>Please select the buttons below which contain your current interests </h3>
+                   
                         <hr class="intro-divider">
                         <h1>Interests</h1>
-                        <select class="skills"></select>
                         <ul class="list-inline intro-social-buttons">
                             <li>
                                 <a onclick="document.getElementById('btnzz1').style.backgroundColor = 'transparent';"  class="btn btn-default btn-lg" id="btnzz1"><span class="network-name">Coding</span></a>
@@ -27,9 +27,7 @@
                             <li>
                                 <a onclick="document.getElementById('btnzz5').style.backgroundColor = 'transparent';"class="btn btn-default btn-lg" id="btnzz5"><span class="network-name">Textiles</span></a>
                             </li>
-                            <li>
-                                <a onclick="document.getElementById('btnzz6').style.backgroundColor = 'transparent';"class="btn btn-default btn-lg" id="btnzz6"><span class="network-name">Textiles</span></a>
-                            </li>
+                        
                         
                         </ul>
                         <ul class="list-inline intro-social-buttons">
@@ -41,33 +39,34 @@
                                 <a onclick="document.getElementById('btnz3').style.backgroundColor = 'transparent';"class="btn btn-default btn-lg" id="btnz3"><span class="network-name">Gaming</span></a>
                             </li>
                             <li>
-                                <a onclick="document.getElementById('btnz4').style.backgroundColor = 'transparent';"class="btn btn-default btn-lg" id="btnz4"><span class="network-name">Books</span></a>
+                                <a onclick="document.getElementById('btnz4').style.backgroundColor = 'transparent';"class="btn btn-default btn-lg" id="btnz4"><span class="network-name">Litrature</span></a>
                             </li>
                             <li>
                                 <a onclick="document.getElementById('btnz2').style.backgroundColor = 'transparent';"class="btn btn-default btn-lg" id="btnz2"><span class="network-name">Life Style</span></a>
                             </li>
                             <li>
                                 <a onclick="document.getElementById('btnz5').style.backgroundColor = 'transparent';"class="btn btn-default btn-lg" id="btnz5"><span class="network-name">Poetry</span></a>
+                            </li> 
+                        </ul>
+                         <ul class="list-inline intro-social-buttons" style="margin-top:5%">
+                           
+                             <hr class="intro-divider">
+ <h1>Choose your path</h1>
+                            <li>
+                                <a href="societies#index"  class="btn btn-default btn-lg" id="btnz1"><span class="network-name">Masterer</span></a>
                             </li>
-                            
-                        
+                            <li>
+                                <a href="#"class="btn btn-default btn-lg" id="btnz1"><span class="network-name">Explorer</span></a>
+                            </li>
                         </ul>
 
-                         <ul class="list-inline intro-social-buttons" style="margin-top:5%">
-                             <hr class="intro-divider">
-                            <li>
-                                <a href="societies#index"  class="btn btn-default btn-lg" id="btnz1"><span class="network-name">Become a Master</span></a>
-                            </li>
-                            <li>
-                                <a href="#"class="btn btn-default btn-lg" id="btnz1"><span class="network-name">Expand Your Skills</span></a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </div>
   </div>
 </script>
+
 <%elsif expertuser_signed_in?%> 
 <a name="about"></a>
     <div class="intro-header"style="background: url('/bg/intro-bg.jpg') no-repeat center center;">

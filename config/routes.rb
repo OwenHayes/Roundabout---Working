@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :coding
   resources :wood
   resources :challenges
+  resources :mod
   
 
 

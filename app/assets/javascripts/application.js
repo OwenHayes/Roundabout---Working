@@ -14,3 +14,36 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function() {
+	$.ajax({
+		url: "/data/Skills.txt",
+		success: function(res) {
+			var lines = res.split("\n").slice(1);
+			var remove = "11-1011.00	2.A.1.a	";
+			var skills = [];
+
+			lines.forEach(function(line) {
+					var tmp = line.substr(remove.length);
+					tmp = tmp.slice(0, tmp.indexOf("	"));
+
+					if(skills.indexOf(tmp) === -1 && tmp !== "") {
+						skills.push(tmp);
+					}
+			});
+
+			skills.sort(function(a, b){
+			    return a.localeCompare(b);
+			});
+
+			$(".skills").html("");
+
+			skills.forEach(function(skill) {
+				$(".skills").append("<option>" + skill + "</option>");
+			});
+
+			$(".skills,.skills option").css("color", "black");
+		}
+	});
+});

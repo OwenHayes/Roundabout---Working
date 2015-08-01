@@ -1,46 +1,75 @@
-    <body onload="hexgen()">
-
-
-      <div class="jumbotron" id="jcoding" style="background-image: url('http://www.pulsarwallpapers.com/data/media/3/Alien%20Ink%202560X1600%20Abstract%20Background.jpg')">
-        <div id="challenge-home">
+<div class="jumbotron" id="jcoding">
+        <div id="coding-home">
             <hr class="intro-divider" >
             <h1>Challenges</h1>
             <hr class="intro-divider" >
         </div>
     </div>
+
+
+
+  <div class="challengebox" id="challenge1">
     <div>
+      <h3>Coding</h3>
+      <p>Level : Beginner</p>
+       <p>Average Time : 5 minutes</p>
+      <p>Create a program which outputs "Hello World!!" </p>
+    </div>
+       <ul class="list-inline intro-social-buttons" style="float:right">
+                            <li>
+                                <a class="btn btn-default btn-lg"><span class="network-name">Accept</span></a>
+                            </li>
+                            <li>
+                                <a  onclick="decline1()"class="btn btn-default btn-lg"><span class="network-name">Decline</span></a>
+                            </li>
+        </ul>
+  </div>
+
+ <div class="challengebox" id="challenge2">
     <div>
-      <div class=".homies">
-    
-      </div>
+      <h3>Coding</h3>
+      <p>Level : Beginner</p>
+       <p>Average Time : 30 Minutes</p>
+      <p>Complete Project 1 on generalassemb.ly </p>
     </div>
+       <ul class="list-inline intro-social-buttons" style="float:right">
+                            <li>
+                                <a  href="http://www.generalassemb.ly/"class="btn btn-default btn-lg"><span class="network-name">Accept</span></a>
+                            </li>
+                            <li>
+                                <a   onclick="decline2()"class="btn btn-default btn-lg"><span class="network-name">Decline</span></a>
+                            </li>
+        </ul>
   </div>
-  <div>
-      <div class=".homies">
-        Challenge
-      </div>
+   <div class="challengebox" id="challenge3">
+    <div>
+      <h3>Coding</h3>
+      <p>Level : Beginner</p>
+       <p>Average Time : 3 Hours</p>
+      <p>Follow the course on codeacademy to create a webpage</p>
     </div>
+       <ul class="list-inline intro-social-buttons" style="float:right">
+                            <li>
+                                <a href="http://www.codeacademy.com/" class="btn btn-default btn-lg"><span class="network-name">Accept</span></a>
+                            </li>
+                            <li>
+                                <a  onclick="decline3()" class="btn btn-default btn-lg"><span class="network-name">Decline</span></a>
+                            </li>
+        </ul>
   </div>
-  <div>
-      <p class=".homies">
-        Challenge
-      </p>
-    </div>
-  </div>
-
-    <script type="text/javascript">
-     hexgen()
-     i=1
-        while (i<4) {
-       var Letter =new Array ("0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F");
-       var hexnumber = "#"+""+Letter[Math.floor((Math.random() * 16) + 0)]+""+Letter[Math.floor((Math.random() * 16) + 0)]+""+Letter[Math.floor((Math.random() * 16) + 0)]+""+Letter[Math.floor((Math.random() * 16) + 0)]+""+Letter[Math.floor((Math.random() * 16) + 0)]+""+Letter[Math.floor((Math.random() * 16) + 0)] ;
-       var challenge = "challenge"+i;
-         document.getElementById(challenge).style.background=hexnumber;
-         i++;
-
-
-     }
-   
+  <script>
+  function decline1(){
+    var load = document.getElementById("challenge1");
+      load.style.display ='none'
+  }
+  function decline2(){
+    var load = document.getElementById("challenge2");
+      load.style.display ='none'
+  }
+  function decline3(){
+    var load = document.getElementById("challenge3");
+      load.style.display ='none'
+  }
   
-    </script>
-    </body>
+  </script>
+        
